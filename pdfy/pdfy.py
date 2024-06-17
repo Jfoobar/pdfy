@@ -1,5 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 import base64
 import os
 #python 3
@@ -10,12 +9,12 @@ py_version = 3
 
 class Pdfy():
 	def __init__(self, executable_path=None, debug_port=9222):
-		chrome_options = Options()
+		chrome_options = webdriver.ChromeOptions()
 		chrome_options.add_argument("--remote-debugging-port=" + str(debug_port))
 		chrome_options.add_argument("--headless")
 
 		webdriver_params = {
-			'chrome_options': chrome_options
+			'options': chrome_options
 		}
 		if executable_path:
 			webdriver_params['executable_path'] = executable_path
