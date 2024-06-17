@@ -7,9 +7,11 @@ Pdfy is a Python library for converting HTML (and anything Chrome can render) in
 
 ## Installation ##
 
-To install the library, you need to run.
+To install the orignal library, you need to run.
 
     pip install pdfy
+
+To use this Fork, one would need to download pdfy.py and import pdfy manually
 
 Additionally, [you will need to install Chrome Driver](http://chromedriver.chromium.org/getting-started). 
 
